@@ -1,0 +1,84 @@
+﻿@model CouchbaseWebService.Web.Models.AirportViewModel
+
+@{
+    Layout = null;
+}
+<h2>Airport</h2>
+@using (Html.BeginForm("Search", "Airport"))
+{
+    @Html.AntiForgeryToken()
+    <div>
+
+        @Html.ValidationSummary(true)
+
+        <div>
+            <p>
+                Airport Code : @Html.TextBox("code")
+                <input type="submit" value="Search" />
+            </p>
+
+        </div>
+        <div>
+
+            <table>
+                <tr>
+                    <th>
+                        @Html.LabelFor(model => model.CityOrAirportName)
+                    </th>
+                    <th>
+                        :
+                    </th>
+                    <th>
+                        @Html.DisplayTextFor(model => model.CityOrAirportName)
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        @Html.LabelFor(model => model.Country)
+                    </th>
+                    <th>
+                        :
+                    </th>
+                    <th>
+                        @Html.DisplayTextFor(model => model.Country)
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        @Html.LabelFor(model => model.CountryCode)
+                    </th>
+                    <th>
+                        :
+                    </th>
+                    <th>
+                        @Html.DisplayTextFor(model => model.CountryCode)
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        @Html.LabelFor(model => model.LatitudeDegree)
+                    </th>
+                    <th>
+                        :
+                    </th>
+                    <th>
+                        @Html.DisplayTextFor(model => model.LatitudeDegree)
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        @Html.LabelFor(model => model.LongitudeDegree)
+                    </th>
+                    <th>
+                        :
+                    </th>
+                    <th>
+                        @Html.DisplayTextFor(model => model.LongitudeDegree)
+                    </th>
+                </tr>
+            </table>
+
+        </div>
+
+    </div>
+}

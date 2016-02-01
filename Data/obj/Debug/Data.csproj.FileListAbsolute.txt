@@ -1,0 +1,5 @@
+F:\Projects\Couchbase_WebService_Example\WebApplication1\Data\bin\Debug\Data.dll
+F:\Projects\Couchbase_WebService_Example\WebApplication1\Data\bin\Debug\Data.pdb
+F:\Projects\Couchbase_WebService_Example\WebApplication1\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
+F:\Projects\Couchbase_WebService_Example\WebApplication1\Data\obj\Debug\Data.dll
+F:\Projects\Couchbase_WebService_Example\WebApplication1\Data\obj\Debug\Data.pdb
